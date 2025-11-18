@@ -1,0 +1,117 @@
+{
+  "name": "ForkFire",
+  "short_name": "ForkFire",
+  "description": "Um aplicativo de receitas para ajudar você a cozinhar com facilidade e praticidade.",
+  "categories": [
+    "food",
+    "lifestyle",
+    "productivity"
+  ],
+  "start_url": "forkfire/viewer",
+  "scope": "/forkfire",
+  "id": "/forkfire",
+  "shortcuts": [
+    {
+      "name": "Início",
+      "short_name": "Início",
+      "url": "/viewer",
+      "description": "Página inicial do aplicativo",
+      "icons": [
+        {
+          "src": "/forkfire/viewer/icons/icon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/forkfire/viewer/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-144x144.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-512x512.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/forkfire/viewer/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "forkfire/assets/images/screenshots/screenshot1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Tela principal do ForkFire"
+    }
+  ],
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#ff4b2b",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://pedro-azeredo.github.io/forkfire/manifest.json"
+    }
+  ],
+  "prefer_related_applications": false
+}

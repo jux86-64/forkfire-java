@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fork&Fire</title>
+    <link rel="stylesheet" href="../viewer/static/style.css" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  </head>
+  <body>
+    <div class="divLogin" style="display: block">
+      <img class='logo' src="/forkfire/assets/images/forkfire_logo.png" alt="Logo" style="width: 100px; height: 100px">
+      <br>
+      <h1>Fork&Fire</h1>
+      <h4>Login</h4>
+      <label>Email: <input class="email" type="text" required /></label>
+      <label>Senha: <input class="senha" type="password" required /></label>
+      <button onclick="logar()">Login</button>
+      <button onclick="divCadastrar()">Cadastrar</button>
+      <p
+        class="erroLogin esconder"
+        style="font-size: 0.8rem; color: firebrick"
+      ></p>
+    </div>
+
+    <div class="divCadastro" style="display: none">
+      <img class='logo' src="/forkfire/assets/images/forkfire_logo.png" alt="Logo" style="width: 100px; height: 100px">
+      <h1>Fork&Fire</h1>
+      <h4>Cadastro</h4>
+      <label>Nome: <input class="nomeCadastro" type="text" required /></label>
+      <label>Email: <input class="emailCadastro" type="text" required /></label>
+      <label
+        >Senha: <input class="senhaCadastro" type="password" required
+      /></label>
+      <label
+        >Confirmar senha:
+        <input class="segundaSenhaCadastro" type="password" required
+      /></label>
+      <button onclick="divCadastrar()">Voltar</button>
+      <button onclick="cadastrar()">Cadastrar</button>
+      <p
+        class="erroCadastro esconder"
+        style="font-size: 0.8rem; color: firebrick"
+      >
+        As senhas precisam ser iguais!
+      </p>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-database-compat.js"></script>
+
+    <!-- Inicialização e lógica -->
+    <script src="service-worker.js"></script>
+    <script src="../config/firebase-init.js"></script>
+
+    <!-- Controllers -->
+    <script src="../controller/authController.js"></script>
+
+    <!-- Utils -->
+    <script src="../utils/utils.js"></script>
+  </body>
+</html>
